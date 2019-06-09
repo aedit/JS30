@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+    background-size: cover;
+    font-size: 2.5rem;
+
+    color: black;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .item {
+    border: 2px solid white;
+    border-radius: 1rem;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    background: #ffffff60;
+    user-select: none;
+    transition: all 0.5s;
+  }
+  .item:active,
+  .playing {
+    border: 2px solid black;
+    color: white;
+    background: #00000060;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+  }
+  span {
+    display: none;
+  }
+  .container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .item1 {
+    background: white;
+  }
+  .item2 {
+    background: violet;
+  }
+  .item3 {
+    background: indigo;
+  }
+  .item4 {
+    background: blue;
+  }
+  .item5 {
+    background: green;
+  }
+  .item6 {
+    background: yellow;
+  }
+  .item7 {
+    background: orange;
+  }
+  .item8 {
+    background: red;
+  }
+  .item9 {
+    background: gray;
+  }
+  .item {
+    transition: border 0.1s;
+  }
+  .item:active {
+    border: 10px solid black;
+  }
+}
