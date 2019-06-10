@@ -6,10 +6,10 @@ const projects = [
     desc: 'Hit the key and play the sound!',
   },
   {
-    title: 'JavaScript',
-    url: './JavaScript',
-    num: 0,
-    desc: 'Lorem ipsum dolor sit amet.',
+    title: 'JS Clock',
+    url: './Clock',
+    num: 2,
+    desc: 'A digital and analog clock.',
   },
   {
     title: 'JavaScript',

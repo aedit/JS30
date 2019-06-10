@@ -1,0 +1,84 @@
+html {
+  background: linear-gradient(90deg, #018ded -50%, rgb(49, 84, 107) 150%);
+}
+body {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.analog-clock {
+  width: 10rem;
+  height: 10rem;
+  border: 0.6rem solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour-hand {
+  height: 8px;
+  width: 40%;
+  top: 50%;
+  left: 10%;
+}
+.second-hand {
+  height: 4px;
+  width: 60%;
+  left: -10%;
+}
+.digital-clock {
+  width: 20rem;
+  height: 10rem;
+  border: 0.4rem solid white;
+  margin: 50px auto;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weekday {
+  height: 10%;
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+hr {
+  width: 100%;
+}
+.time {
+  height: 40%;
+  font-size: 3rem;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.date {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+}
