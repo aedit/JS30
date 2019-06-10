@@ -82,3 +82,34 @@ hr {
   font-size: 1.6rem;
   margin-top: 0.4rem;
 }
+button {
+  display: none;
+  height: 0;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: block;
+    overflow: hidden;
+  }
+  button {
+    display: block;
+    height: 4%;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0.4rem;
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .invisible {
+    display: none;
+    height: 0;
+  }
+}

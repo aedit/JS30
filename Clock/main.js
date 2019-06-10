@@ -48,3 +48,24 @@ setInterval(() => {
   hourHand.style.transform = `rotate(${hourDegrees}deg)`
   hour.textContent = hours
 }, 1000)
+
+if (window.innerWidth < 768) {
+  const button = document.getElementsByTagName('button')
+  const analog = document.querySelector('.analog-clock')
+  const digital = document.querySelector('.digital-clock')
+  button[0].textContent = 'Digital'
+  digital.classList.add('invisible')
+
+  function convert() {
+    if (button[0].textContent === 'Digital') {
+      button[0].textContent = 'Analog'
+      digital.classList.remove('invisible')
+
+      analog.classList.add('invisible')
+    } else if (button[0].textContent === 'Analog') {
+      button[0].textContent = 'Digital'
+      analog.classList.remove('invisible')
+      digital.classList.add('invisible')
+    }
+  }
+}
