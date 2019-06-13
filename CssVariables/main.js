@@ -16,9 +16,8 @@ function handleUpdate() {
   if (this.type === 'checkbox') {
     document.documentElement.style.setProperty(
       `--${this.name}`,
-      this.checked ? 1 : 0,;
+      this.checked ? 1 : 0,
     )
-    console.log(`--${this.name}`)
   }
 }
 
