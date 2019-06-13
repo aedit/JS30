@@ -12,10 +12,10 @@ const projects = [
     desc: 'A digital and analog clock.',
   },
   {
-    title: 'JavaScript',
-    url: './JavaScript',
-    num: 0,
-    desc: 'Lorem ipsum dolor sit amet.',
+    title: 'Css Variables',
+    url: './CssVariables',
+    num: 3,
+    desc: 'Basic CSS Image Editor',
   },
   {
     title: 'JavaScript',

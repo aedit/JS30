@@ -16,6 +16,7 @@ const months = [
   'February',
   'March',
   'April',
+  'May',
   'June',
   'July',
   'August',
@@ -32,7 +33,7 @@ setInterval(() => {
   const hours = date.getHours()
 
   weekday.textContent = days[date.getDay()]
-  day.textContent = date.getDay()
+  day.textContent = date.getDate()
   month.textContent = months[date.getMonth()]
   year.textContent = date.getFullYear()
 

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basic Image Editor</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="imageurl">
+        <input
+          type="url"
+          name="image-url"
+          placeholder="Enter your image url here"
+          id="image-url"
+        />
+        <input type="submit" value="View Image" id="imagesubmit" />
+      </div>
+      <div class="menu">
+        <label for="image-height"
+          >Image Height:
+          <input
+            id="image-height"
+            type="range"
+            name="image-height"
+            min="0"
+            max="100"
+            value="100"
+            data-sizing="%"
+        /></label>
+        <label for="image-border"
+          >Image border:
+          <input
+            id="image-border"
+            type="range"
+            name="image-border"
+            min="0"
+            max="50"
+            value="0"
+            data-sizing="%"
+        /></label>
+        <label for="border-size"
+          >Border Size:
+          <input
+            id="border-size"
+            type="range"
+            name="border-size"
+            min="0"
+            max="1"
+            value="0"
+            data-sizing="em"
+        /></label>
+        <label for="border-type"
+          >Border Type:
+          <select name="border-type">
+            <option value="none">None</option>
+            <option value="dotted">Dotted</option>
+            <option value="solid">Solid</option>
+            <option value="thin">Thin</option>
+            <option value="thick">Thick</option>
+            <option value="dashed">Dashed</option>
+            <option value="double">Double</option>
+          </select></label
+        >
+        <label for="border-color"
+          >Border Color:
+          <input id="border-color" type="color" name="border-color"
+        /></label>
+        <label for="image-blur"
+          >Image Blur:
+          <input
+            id="image-blur"
+            type="range"
+            name="image-blur"
+            min="0"
+            max="5"
+            value="0"
+            data-sizing="em"
+        /></label>
+        <label for="image-brightness"
+          >Image Brightness:
+          <input
+            id="image-brightness"
+            type="range"
+            name="image-brightness"
+            min="1"
+            max="100"
+            value="1"
+            data-sizing=""
+        /></label>
+        <label for="image-grayscale"
+          >Image Grayscale:
+          <input id="image-grayscale" type="checkbox" name="image-grayscale"
+        /></label>
+        <label for="image-sepia"
+          >Image Sepia:
+          <input id="image-sepia" type="checkbox" name="image-sepia"
+        /></label>
+        <label for="image-invert"
+          >Image Invert:
+          <input id="image-invert" type="checkbox" name="image-invert"
+        /></label>
+        <label for="image-opacity"
+          >Image Opacity:
+          <input
+            id="image-opacity"
+            type="range"
+            name="image-opacity"
+            min="0"
+            max="100"
+            value="100"
+            data-sizing="%"
+        /></label>
+        <label for="image-hue"
+          >Image Hue:
+          <input
+            id="image-hue"
+            type="range"
+            name="image-hue"
+            min="0"
+            max="360"
+            value="0"
+            data-sizing="deg"
+        /></label>
+        <label for="image-padding"
+          >Image padding:
+          <input
+            id="image-padding"
+            type="range"
+            name="image-padding"
+            min="0"
+            max="15"
+            value="0"
+            data-sizing="em"
+        /></label>
+      </div>
+      <div class="image">
+        <img
+          src="https://picsum.photos/id/103/1936"
+          alt="A random image from internet"
+          id="hero"
+        />
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

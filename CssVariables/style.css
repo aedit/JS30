@@ -1,0 +1,84 @@
+:root {
+  --image-height: 100%;
+  --image-border: 0%;
+  --border-size: 0em;
+  --border-type: solid;
+  --border-color: black;
+  --image-blur: 0em;
+  --image-brightness: 1;
+  --image-grayscale: 0;
+  --image-sepia: 0;
+  --image-invert: 0;
+  --image-hue: 0deg;
+  --image-opacity: 100%;
+  --image-padding: 0em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.imageurl {
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  padding: 0.1em 0;
+}
+#image-url {
+  width: 50%;
+  color: gray;
+  height: 2em;
+  border: none;
+  border-radius: 0.1em;
+  border: 1px solid gray;
+}
+#imagesubmit {
+  padding: 0.2em;
+  background: white;
+  border: 0.1em solid black;
+  border-radius: 10%;
+  transition: all 0.5s;
+}
+#imagesubmit:focus {
+  color: white;
+  background: black;
+}
+input:focus {
+  outline: none;
+}
+.menu {
+  height: 25%;
+  padding: 0.1em;
+  width: 100%;
+  background: chocolate;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.image {
+  height: 70%;
+  padding: var(--image-padding);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: var(--image-height);
+  border-radius: var(--image-border);
+  border: var(--border-size) var(--border-type) var(--border-color);
+  filter: blur(var(--image-blur)) brightness(var(--image-brightness))
+    grayscale(var(--image-grayscale)) sepia(var(--image-sepia))
+    invert(var(--image-invert)) hue-rotate(var(--image-hue))
+    opacity(var(--image-opacity));
+}
